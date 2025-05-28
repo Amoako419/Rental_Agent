@@ -4,7 +4,6 @@ import datetime
 import boto3
 import uuid # For generating unique IDs for listings if needed
 import os
-from google.adk.tools import google_search
 import time # For adding delays
 
 # For loading .env file (pip install python-dotenv)
@@ -379,14 +378,14 @@ if __name__ == '__main__':
         agent_log("info", "Boto3 session initialized.")
 
     # Example User Queries for direct tool testing
-    # query1 = "How much does rent cost in East Legon for a 4-bedroom apartment?"
+    query1 = "How much does rent cost in Osu for a 2-bedroom apartment?"
     # query1 = "show me rent for 2 bedroom apartment in Osu"
     # query2 = "4 bed house in Cantonments price"
     # query3 = "what is the average rent for a 1 bedroom in Airport Residential in USD" # Tool now converts to GHS
-    query4 = "any houses for rent in West Legon"
+    # query4 = "any houses for rent in West Legon"
 
     # Test the tool function directly
-    result = get_ghana_apartment_data(query4) 
+    result = get_ghana_apartment_data(query1) 
 
     print("\n--- Tool Direct Execution Output ---")
     print(json.dumps(result, indent=2))
