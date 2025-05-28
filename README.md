@@ -16,7 +16,7 @@ An AI-powered agent that scrapes real estate data from Ghanaian property website
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/ye/Rental_Agent.git
+    git clone https://github.com/amoako419/Rental_Agent.git
     cd Rental_Agent
     ```
 
